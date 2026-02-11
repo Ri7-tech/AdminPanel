@@ -8,12 +8,12 @@ export default function Navbar() {
     display: "flex",
     justifyContent: "space-between",
   });
-  const Search = styled("div")({
+  const Search = styled("div")(({ theme }) => ({
     backgroundColor: "white",
     padding: "0px 10px",
     borderRadius: "5px",
     width: "40%",
-  });
+  }));
   return (
     <>
       <AppBar
@@ -28,7 +28,7 @@ export default function Navbar() {
             Dashboard
           </Typography>
           <Pets sx={{ display: { xs: "block", sm: "none" } }} />
-          <Search>
+          <Search sx={{ display: { xs: "none", sm: "block" } }}>
             <InputBase placeholder="Search Here" />
           </Search>
         </StyleToolbar>
