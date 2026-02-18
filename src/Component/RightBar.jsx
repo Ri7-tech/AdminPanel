@@ -7,7 +7,7 @@ export default function RightBar() {
       <Box flex={1} p={2}>
         <Stack direction={"row"} position={"relative"}>
           <Paper sx={{ height: 40, width: 200 }}>
-            <img src="" alt="" style={{ height: 40, width: 40 }} />
+            <img src="a" alt="" style={{ height: 40, width: 40 }} />
           </Paper>
           <h4 style={{ position: "absolute" }}>John Deo</h4>
         </Stack>

@@ -4,7 +4,7 @@ import { createTheme, ThemeProvider, Stack } from "@mui/material";
 import Box from "@mui/material/Box";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import { Feed } from "@mui/icons-material";
+import Feed from "./feed";
 import RightBar from "./RightBar";
 
 export default function Home() {
