@@ -1,8 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-
-export default function SimplePaper() {
+export default function SimplePaper({ img }) {
   return (
     <>
       <Box
@@ -11,19 +10,29 @@ export default function SimplePaper() {
           flexWrap: "wrap",
           "& > :not(style)": {
             m: 1,
-            width: 128,
-            height: 128,
+            width: 70,
+            height: 70,
+            marginLeft: 4,
           },
         }}
       >
         <Paper
-          elevation={0}
-          sx={{ backgroundColor: "#ffe3a3", textAlign: "center" }}
+          elevation={3}
+          sx={{
+            backgroundColor: "#ffe3a3",
+            textAlign: "center",
+            height: 80,
+            width: 80,
+          }}
         >
           <img
-            src="https://mui.com/static/images/cards/contemplative-reptile.jpg"
+            src={img}
             alt="image"
-            style={{ height: 40, width: 40, marginTop: 20 }}
+            style={{
+              height: "100%",
+              width: "100%",
+              padding: 10,
+            }}
           />
         </Paper>
       </Box>

@@ -1,16 +1,25 @@
 import { Box, Paper, Stack } from "@mui/material";
 import React from "react";
+import img2 from "../Images/img4.jpg";
 
 export default function RightBar() {
   return (
     <>
       <Box flex={1} p={2}>
-        <Stack direction={"row"} position={"relative"}>
-          <Paper sx={{ height: 40, width: 200 }}>
-            <img src="a" alt="" style={{ height: 40, width: 40 }} />
-          </Paper>
-          <h4 style={{ position: "absolute" }}>John Deo</h4>
-        </Stack>
+        <Paper elevation={3} sx={{ padding: 0.5 }}>
+          <Stack direction={"row"} position={"relative"}>
+            <Paper elevation={3} sx={{ height: 60, width: 60 }}>
+              <img
+                src={img2}
+                alt=""
+                style={{ height: "100%", width: "100%" }}
+              />
+            </Paper>
+            <h5 style={{ position: "absolute", left: 70, top: 10 }}>
+              John Deo
+            </h5>
+          </Stack>
+        </Paper>
       </Box>
     </>
   );

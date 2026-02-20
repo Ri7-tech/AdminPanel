@@ -67,7 +67,7 @@ export default function Sidebar({ setMode, mode }) {
                     onChange={() => setMode(mode == "dark" ? "light" : "dark")}
                   />
                 </ListItemIcon>
-                <ListItemText primary="Settings " />
+                <ListItemText primary=" " />
               </ListItemButton>
             </ListItem>
           </List>
